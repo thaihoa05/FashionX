@@ -1,7 +1,7 @@
 services:
   - type: web
     name: fashionx
-    env: dotnet
+    runtime: dotnet
     plan: free
     buildCommand: dotnet publish -c Release -o out
     startCommand: dotnet out/DuAnTotNghiep_Qlycuahangquanao.dll
