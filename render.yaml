@@ -1,12 +1,5 @@
 services:
   - type: web
     name: fashionx
-    runtime: dotnet
+    env: docker
     plan: free
-    buildCommand: dotnet publish -c Release -o out
-    startCommand: dotnet out/DuAnTotNghiep_Qlycuahangquanao.dll
-    envVars:
-      - key: DOTNET_RUNNING_IN_CONTAINER
-        value: true
-      - key: DOTNET_USE_POLLING_FILE_WATCHER
-        value: true
